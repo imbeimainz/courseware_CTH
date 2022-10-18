@@ -1,0 +1,37 @@
+---
+title: >
+  Introduction to R: first steps, statistics, graphics
+subtitle: >
+  CTH Course Series on Statistics - 2022
+  <p align="center">
+  <a href="https://www.unimedizin-mainz.de/imbei/">
+  IMBEI @ <img src="images/combilogo.png" alt="" height="70"/>
+  </a>
+  </p>
+author:
+- name: Annekathrin Ludt (anneludt@uni-mainz.de)<br><a href="https://www.unimedizin-mainz.de/imbei/">IMBEI, University Medical Center Mainz</a><br>
+- name: <a href="https://federicomarini.github.io">Federico Marini (marinif@uni-mainz.de)</a><br><a href="https://www.unimedizin-mainz.de/imbei/">IMBEI, University Medical Center Mainz</a><br><a href="https://twitter.com/FedeBioinfo">`r icons::fontawesome('twitter')` `@FedeBioinfo`</a>
+date: "2022/10/26"
+output: 
+  bookdown::html_document2:
+    toc: true
+    toc_float: true
+    theme: cosmo
+    code_folding: show
+    code_download: true
+editor_options: 
+  chunk_output_type: console
+
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#",
+  error = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+options(width = 100)
+```
+
