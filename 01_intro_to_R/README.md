@@ -1,5 +1,8 @@
 # Introduction to R: first steps, statistics, graphics
 
+This course will follow a single document, [`intro_to_R_material.html`](intro_to_R_material.html), generated via RMarkdown.  
+This file will contain all required information, code chunks, and generated output.
+
 Contents:
 
 - Step 0: First things first: know your tools, R & RStudio
@@ -8,3 +11,4 @@ Contents:
 - Step 3: Analyzing (tabular) data: describe, explore, transform, summarise data
 - Step 4: Plotting data
 - Bonus Step: reproducible reports, i.e. escaping "the R script"
+
