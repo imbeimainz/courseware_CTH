@@ -6,6 +6,8 @@ subtitle: >
   <p align="center">
   <a href="https://www.unimedizin-mainz.de/imbei/">
   IMBEI @ <img src="images/combilogo.png" alt="" height="70"/>
+  <br><a href="https://www.unimedizin-mainz.de/imbei/">
+  <img src="images/ticardio-logo.png" alt="" height="50"/>
   </a>
   </p>
 author:
