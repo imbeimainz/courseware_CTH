@@ -128,21 +128,21 @@ Advantages of an IDE
 
 It is good practice to keep a set of related data, analyses, and text self-contained in a single folder, called the working directory.
 
-Why? 
+*Why?*
 
 * Easier to have "self-contained" research units!
 * A project "does not interfere" with other projects
 * Gives a structure, easier to find things, use, reuse
 * Someone else (including future you) can understand what goes on
 
-How?
+*How?*
 
 RStudio projects!  
 Custom settings, per project.
 
 Let's create one live now - and have the workspace NOT saved
 
-What is the best structure?
+*What is the best structure?*
 
 One, used consistently - not gonna touch on naming things as it can get hot quickly :)
 
@@ -153,7 +153,7 @@ With R...
 `file.edit()`
 
 
-Where am I doing things?
+*Where am I doing things?*
 
 The working directory is the place from where R will be looking for and saving the files. 
 
@@ -183,7 +183,7 @@ Nice resources on top:
 
 ### Where to ask for help?
 
-* your neighbour - covid-conform, do interact within each other!
+* your neighbour - if COVID-conform, do interact within each other!
 * your colleagues
 * rdocumentation.org website 
 * the web: google, StackOverflow
@@ -222,9 +222,9 @@ Our contributions so far:
 
 ###  How to use packages
 
-- Install: once (for every major R version)
-- Load: in each session
-- Use like any base R functionality
+- **Install**: once (for every major R version)
+- **Load**: in each session
+- **Use** like any base R functionality
 
 For Bioconductor packages...
 
@@ -324,6 +324,9 @@ Find out what these do!
 
 ### Exercise Session 0 - Solutions
 
+<details>
+<summary>Click on this to display the solution</summary>
+
 ```{r}
 ?getwd
 ?setwd
@@ -339,7 +342,7 @@ help(quit)
 ?cars
 ```
 
-
+</details>
 
 ## Make your life easier - Notes for your future self
 
@@ -363,7 +366,12 @@ Careful here:
 
 ## Exercise session 1
 
-Grab some mini-postit!
+First things first:
+
+* Grab some mini-postit (for those of you participating in person)!
+* Get ready to use the chat & the reactions 
+
+Then:
 
 - find out more about the `iris` dataset. What is it about at all? How many variables are included? How many observations?
 - `rep`licate! find out a function that `rep`licates elements of a vector to produce this
@@ -381,6 +389,7 @@ BONUS: ... and this
 ### Exercise Session 1 - Solutions
 
 <details>
+<summary>Click on this to display the solution</summary>
 
 ```{r}
 rep(1,4)
@@ -404,12 +413,12 @@ R can recognize different general types of data
 When and where to use which? 
 
 
-## I was curious about you
+## I was curious about the participants
 
-In a previous edition of a similar course, I wanted to know:
+In a previous edition of a similar course, I asked the future participants:
 
 - How old are you?
-- What is you current academic level? (PI, Postdoc, PhD, master)
+- What is your current academic level? (PI, Postdoc, PhD, master)
 - What is your current knowledge level of R? (pro-good-intermediate-poor-none)
 - What is your knowledge of programming languages in general?
 - What is your experience level with genomics and RNA-seq data?
@@ -575,8 +584,6 @@ It was a deep dive, but now...
 - You can create R Markdown files and export them to pdf or html files.
 
 
-
-
 ## (Much) more on Rmarkdown
 
 - http://rmarkdown.rstudio.com/
@@ -593,7 +600,11 @@ You can do much much more (presentations, websites, manuscripts,...)
 - can you find out how to generate a word document as output?
 - insert some code you previously used for exploring the small survey data - remember, a fresh session is run when knitting, so you need the commands from the very start!
 
+
 ### Exercise Session Bonus - Solutions
+
+<details>
+<summary>Click on this to display the solution</summary>
 
 - `File -> New File -> R Markdown...` in RStudio
 - add this in the yaml header
@@ -602,8 +613,8 @@ You can do much much more (presentations, websites, manuscripts,...)
 output:
   word_document
 ```
-
-
+<!---->
+</details>
 
 
 # Step 2: Data in, data out
@@ -751,7 +762,6 @@ class(mydf$age)
 
 ### Exploring a `data.frame`
 
-
 ```{r}
 mydf$age   # it's all about the money :)
 mydf[,1]
@@ -767,12 +777,12 @@ surveyrbioc <- read.csv("https://raw.githubusercontent.com/federicomarini/rbioc2
 head(surveyrbioc)
 tail(surveyrbioc)
 names(surveyrbioc)
-# View(surveyrbioc)
 str(surveyrbioc)
 summary(surveyrbioc)
 surveyrbioc[ , ] 
 ```
 
+Don't forget some nice built-in like the `View()` function, in RStudio - this is a nice alternative to "pure browsing in Excel".
 
 
 ## Exercise session 2
@@ -789,6 +799,7 @@ Using the `surveyrbioc` object:
 ### Exercise Session 2 - Solutions
 
 <details>
+<summary>Click on this to display the solution</summary>
 
 ```{r}
 mean(surveyrbioc$Q1)
@@ -912,6 +923,7 @@ surveyrbioc$Q2=="PhD student"
 ### Exercise Session 3 - Solutions
 
 <details>
+<summary>Click on this to display the solution</summary>
 
 ```{r}
 sum(surveyrbioc$Q2 == "PhD student")
@@ -1031,8 +1043,9 @@ lapply(iris[,1:4],sd)
 
 The major difference is in the presentation of the output
 
+## A very good friend: get a `summary` of your data
 
-`summary`
+*and some other friends...*
 
 Try out `summary` on a `data.frame`
 
@@ -1084,6 +1097,7 @@ The `MASS` package contains the dataset `Cars93`, which stores the data on 93 ma
 ### Exercise Session 4 - Solutions
 
 <details>
+<summary>Click on this to display the solution</summary>
 
 ```{r}
 library(MASS)
@@ -1416,7 +1430,6 @@ dev.off()
 
 ## Exercise session 5
 
-
 Back to the `iris`. Three species are there. Explore the dataset in the following ways:
 
 - draw a histogram of the petal length. What do you see?
@@ -1429,6 +1442,7 @@ Back to the `iris`. Three species are there. Explore the dataset in the followin
 ### Exercise Session 5 - Solutions
 
 <details>
+<summary>Click on this to display the solution</summary>
 
 ```{r}
 hist(iris$Petal.Length)
@@ -1462,6 +1476,8 @@ http://shiny.stat.ubc.ca/r-graph-catalog/
 
 
 ## The `gapminder` project
+
+Sit and relax/enjoy...
 
 https://www.youtube.com/watch?v=hVimVzgtD6w
 
@@ -1587,6 +1603,8 @@ p + geom_point(aes(col=continent)) + geom_smooth() + facet_wrap(~continent)
 
 ### Saving the plots
 
+Becomes de facto easier - works on "plot objects".
+
 ```{r eval=FALSE}
 ggsave(file="myplot.png")
 ```
@@ -1610,6 +1628,8 @@ bp <- ggplot(gapminder,
   scale_color_manual(values = country_colors) + theme(strip.text = element_text(size = rel(1.1)))
 bp
 ```
+
+One step away from making things interactive - more interesting? more accessible? more explorable?
 
 ```{r eval=TRUE,message=FALSE}
 plotly::ggplotly(bp)
@@ -1721,6 +1741,9 @@ niceone + theme_excel() + scale_color_excel()
 <!-- # joining tables (?) -->
 
 <details>
+<summary>Click on this to display the solution</summary>
+
+
 </details>
 
 <!-- # Step 5: SummarizedExperiment: your best friend for "bioinformatics datasets" -->
@@ -1947,7 +1970,8 @@ niceone + theme_excel() + scale_color_excel()
 <!-- assay(se)[1:3, colData(se)$time == 0 | colData(se)$time == 8] -->
 <!-- ``` -->
 
-<!-- </details> -->
+<!-- <details> -->
+<!-- <summary>Click on this to display the solution</summary> -->
 
 <!-- #### Adding variables to metadata -->
 
