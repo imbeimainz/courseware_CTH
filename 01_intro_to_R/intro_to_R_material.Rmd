@@ -51,7 +51,15 @@ The content will follow closely the slides used during the course itself, with p
 - Step 4: Plotting data
 - Bonus Step: reproducible reports, i.e. escaping "the R script"
 
-# Step 0: R and RStudio, know your tools
+**Schedule (tentatively)**
+
+9:30-10:00 --- Troubleshooting & Help desk for installation
+10:00-12:30 --- Step 0, 1, Bonus, 2 (with short breaks in between)
+12:30-13:30 --- *Lunch break*
+13:30-16:30 --- Step 3, 4, Q&As
+
+
+# Step 0: R and RStudio, know your tools {.unnumbered}
 
 ## What is R? Why should I use R? 
 
@@ -2009,7 +2017,7 @@ niceone + theme_excel() + scale_color_excel()
 
 
 
-# Useful material
+# Useful material {.unnumbered}
 
 Books
 
