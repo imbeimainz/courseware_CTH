@@ -42,7 +42,7 @@ This document contains a comprehensive workflow for the course **Introduction to
 The content will follow closely the slides used during the course itself, with particular highlighting regarding the code and its output. This should allow you to replicate all the steps, constituting a starting base for extending the commands e.g. to your own datasets.
 
 
-# Table of contents
+# Table of contents {.unnumbered}
 
 - Step 0: First things first: know your tools, R & RStudio
 - Step 1: Basics of R, Rstudio, help, packages
@@ -553,7 +553,7 @@ Deatiled very nicely here: https://yihui.name/knitr/options/
 
 A simple set of options which you can use for many documents:
 
-```{r, echo=TRUE, warning=FALSE}
+```{r, echo=TRUE, warning=FALSE, eval=FALSE}
 set.seed(42)
 knitr::opts_chunk$set(
   comment = NA,
@@ -2052,6 +2052,22 @@ Misc
 
 
 # Session Info {.unnumbered}
+
+As a lesson, do take note/report the versions of R/the different packages you used for your analysis.
+
+Why? 
+
+<details>
+<summary>Click on this to display the solution</summary>
+
+* You will (should) report these in your Material & Methods
+* You credit the work of others - as a direct consequence
+* Different package versions might lead to different results
+* It is a good scientific research practice!
+* It helps others help you - in case you want to post your question on StackOverflow or similar
+* Because one command just does it for you
+
+</details>
 
 ```{r}
 sessionInfo()
