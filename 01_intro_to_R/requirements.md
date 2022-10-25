@@ -21,6 +21,7 @@ If this returns no errors, you should be all set.
 <summary>
 You can test whether you can load the packages by running the lines of code included in this collapsible element (click to display)
 </summary>
+
 ```
 library("knitr")
 library("rmarkdown")
