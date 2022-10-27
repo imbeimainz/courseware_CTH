@@ -4,12 +4,12 @@ title: >
 subtitle: >
   CTH Course Series on Statistics - 2022
   <p align="center">
-  <a href="https://www.unimedizin-mainz.de/imbei/">
   IMBEI @ <img src="images/combilogo.png" alt="" height="70"/>
-  <br><a href="https://www.unimedizin-mainz.de/imbei/">
   <img src="images/ticardio-logo.png" alt="" height="50"/>
   </a>
   </p>
+  <a href="https://www.unimedizin-mainz.de/imbei/">
+  <br><a href="https://www.unimedizin-mainz.de/imbei/">
 author:
 - name: Annekathrin Ludt (anneludt@uni-mainz.de)<br><a href="https://www.unimedizin-mainz.de/imbei/">IMBEI, University Medical Center Mainz</a><br>
 - name: <a href="https://federicomarini.github.io">Federico Marini (marinif@uni-mainz.de)</a><br><a href="https://www.unimedizin-mainz.de/imbei/">IMBEI, University Medical Center Mainz</a><br><a href="https://twitter.com/FedeBioinfo">`r icons::fontawesome('twitter')` `@FedeBioinfo`</a>
@@ -22,8 +22,7 @@ output:
     code_folding: show
     code_download: true
 editor_options: 
-  chunk_output_type: console
-
+  chunk_output_type: inline
 ---
 
 ```{r setup, include = FALSE}
