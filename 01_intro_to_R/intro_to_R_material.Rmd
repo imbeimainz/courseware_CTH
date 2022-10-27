@@ -921,11 +921,11 @@ surveyrbioc$Q2=="PhD student"
 ## Exercise session 3
 
 - How many PhD students did reply?
-- What is the proportion of PhD students to all other participants?
-- How old are they on average?
-- How many of you are older than 30?
-- How many postdocs are younger than 35?
-- How many of you did not reply to the last question? <!-- (`is.na` is your friend) -->
+- What was the proportion of PhD students to all other participants?
+- How old were they on average?
+- How many of the participants were older than 30?
+- How many postdocs were younger than 35?
+- How many of the participants did not reply to the last question? <!-- (`is.na` is your friend) -->
 
 ### Exercise Session 3 - Solutions
 
